@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Seller</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background-color: #2c3e50; /* Dark header background color */
+            padding: 15px;
+            text-align: center;
+            color: #fff; /* Light text color for the header */
+        }
+
+        .hero-section {
+            background-image: url('grocery-hero-image.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff; /* Light text color for hero content */
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #27ae60; /* Green call-to-action button color */
+            color: #fff; /* Light text color for the button */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #218f52; /* Darker green color on hover */
+        }
+
+        .featured-products {
+            background-color: #fff; /* White background color for the featured products section */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section {
+            background-color: #2c3e50; /* Dark background color for the about section */
+            color: #fff; /* Light text color for the about section */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            background-color: #3498db; /* Blue background color for the contact form section */
+            color: #fff; /* Light text color for the contact form section */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333; /* Dark background color for the footer */
+            color: #fff; /* Light text color for the footer */
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grocery Seller</h1>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Fresh and Quality Groceries Delivered to Your Doorstep</h1>
+            <p>Explore our wide range of products and enjoy hassle-free shopping.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-card"> <!-- Repeat this block for each featured product -->
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>Learn more about our commitment to providing fresh and high-quality groceries to our customers.</p>
+        <a href="#" class="cta-button">Read More</a>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us!</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Grocery Seller. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
